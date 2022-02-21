@@ -399,6 +399,7 @@ input#burger-checkbox~ul{
 .contact-info{
   text-align: right;
   font-size: 10px;
+  padding-top: 2rem;
 }
 
 /* Tablet */
