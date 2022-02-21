@@ -1,0 +1,612 @@
+/*
+Extra-light 200
+Regular 400
+Bold 700
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+
+:root{
+  --gray: hsl(0, 0%, 7%);
+  --darkGray: hsl(0, 0%, 10%);
+  --lightGold: hsl(45, 100%, 35%);
+  --darkGold: hsl(45, 100%, 25%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--darkGray);
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+.golden-span{
+  color: var(--lightGold);
+}
+
+.home-wrapper{
+  background-color: var(--darkGray);;
+  padding-bottom: 20px;
+  color: white;
+  box-shadow: 2px 6px 22px -10px black;
+}
+
+.menu{
+  text-align: center;
+  font-weight: 400;
+}
+
+.menu a{
+  color: white;
+  text-decoration: none;
+}
+
+.menu li{
+  list-style: none;
+  padding: 8% 0;
+}
+
+.menu>li a:hover{
+
+  border-bottom: 2px solid white;
+  font-weight: 700;
+  
+}
+
+.menu label img{
+  padding: 10% 0;
+}
+
+input#burger-checkbox{
+  visibility: hidden;
+}
+
+input#burger-checkbox:checked~ul{
+  right: 0%;
+  bottom: 0%;
+}
+
+input#burger-checkbox~ul{
+  background-color: var(--lightGold);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  bottom: 100%;
+  transition: all 300ms linear;
+}
+
+.brand>h2 a{
+  color: white;
+  text-decoration: none;
+}
+
+.brand span{
+  color: var(--lightGold);
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 30px;
+}
+
+.main{
+  margin: 0 auto;
+  width: 90vw;
+}
+
+.info-content h1{
+  margin-top: 15px;
+}
+
+.info-content h2{
+  margin-bottom: 15px;
+}
+
+.info-content>h1 span{
+  color: var(--lightGold);
+}
+
+.info-content>h2 span{
+  color: var(--lightGold);
+}
+
+.info-content p{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.experience span{
+  color: var(--lightGold);
+}
+
+.social-icons{
+  display: flex;
+  padding: 25px 0;
+  justify-content: space-around;
+}
+
+.social-buttons{
+  background-color: var(--lightGold);
+  padding: 8px;
+  border-radius: 12px;
+  transition: all 300ms linear;
+  box-shadow: 2px 6px 22px -10px black;
+}
+
+.social-buttons:hover{
+  background-color: white;
+}
+
+.cv-wrapper{
+  text-align: center;
+}
+
+.download-cv{
+  padding: 10px 50px;
+  background-color: var(--lightGold);
+  color: var(--darkGray);
+  font-weight: 700;
+  border: none;
+  border-radius: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  box-shadow: 2px 6px 22px -10px black;
+  transition: all 300ms linear;
+}
+
+.download-cv:hover{
+  background-color: white;
+  color: var(--darkGray);
+  box-shadow: none;
+}
+
+.photo{
+  text-align: center;
+}
+
+.main>.photo img{
+  width: 250px;
+  margin: 25px 0;
+  border-left: 7px solid var(--lightGold);
+  border-bottom: 7px solid var(--lightGold);
+  border-right: 7px solid white;
+  border-top: 7px solid white;
+  box-shadow: 2px 6px 22px -10px black;
+}
+
+.about-wrapper{
+  background-color: var(--gray);
+  padding-bottom: 2rem;
+}
+
+.about-me>div{
+  padding: 1rem;
+}
+
+.about-me>div>h1 span{
+  color: var(--lightGold);
+}
+
+.about-me>div>h1{
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  color: white;
+  text-align: right;
+}
+
+.about-me p{
+  padding: 1rem;
+  color: white;
+  text-align: right;
+}
+
+.formation{
+  color: white;
+  text-align: right;
+  padding-top : 1rem;
+}
+
+.formation-card{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.card-info{
+  text-align: right;
+}
+
+.formation-card img{
+  width: 100px;
+  padding: 1rem;
+  border-right: 4px solid var(--lightGold);
+}
+
+.abilities-wrapper{
+  background-color: var(--darkGray);
+  color: white;
+  padding: 3rem 1rem;
+  padding-bottom: 0;
+}
+
+
+.abilities-wrapper h1{
+  text-align: center;
+  font-size: 24px;
+}
+
+.stack-wrapper{
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(3,1fr);
+  margin-top: 2rem;
+}
+
+.stack-logo-img{
+  width: 50px;
+  display: block;
+  margin: 25px auto;
+}
+
+.progress-bars{
+  background-color: var(--gray);
+  border-radius: 10px;
+}
+
+.skills{
+  background-color: var(--darkGray);
+  padding: 2rem 1rem;
+  padding-bottom: 3rem;
+  color: white;
+}
+
+.skills h3{
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.web-design-bar{
+  display: inline-block;
+  width: 60%;
+  height: 10px;
+  border-radius: 10px;
+  transition: width .4s ease-in-out;
+  background: var(--lightGold);
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+    transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+    transparent 75%, transparent);
+  animation: animate-stripes 2s linear infinite;
+}
+
+.projects-management-bar{
+  display: inline-block;
+  width: 70%;
+  height: 10px;
+  border-radius: 10px;
+  transition: width .4s ease-in-out;
+  background: var(--lightGold);
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+    transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+    transparent 75%, transparent);
+  animation: animate-stripes 2s linear infinite;
+}
+
+.python-bar{
+  display: inline-block;
+  width: 55%;
+  height: 10px;
+  border-radius: 10px;
+  transition: width .4s ease-in-out;
+  background: var(--lightGold);
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+    transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+    transparent 75%, transparent);
+  animation: animate-stripes 2s linear infinite;
+}
+
+@keyframes animate-stripes{
+  0% {background-position: 0 0;}
+  100% {background-position: 60px 0;}
+}
+
+.portfolio-wrapper{
+  background-color: var(--gray);
+  padding: 3rem 1rem;
+}
+
+.portfolio-title h1{
+  font-size: 24px;
+  color: white;
+}
+
+.carousel{
+  width: 90%;
+  max-width: 720px;
+  background-color: var(--darkGray);
+  padding: 1rem;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  overflow-x: hidden;
+  box-shadow: 3px 3px 3px 3px black;
+}
+
+.carousel-container{
+  width: 400%;
+  background-color: var(--darkGray);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem;
+  border-radius: 20px;
+  transition: all .5s ease ;
+  transform: translateX(0%);
+}
+
+.carousel-container img{
+  width: 25%;
+  border-radius: 20px;
+  box-shadow: 0 0 3px 3px black;
+}
+
+.points{
+  width: 100%;
+  background-color: transparent;
+  padding: .5rem;
+  padding-bottom: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.point{
+  width: 1rem;
+  height: 1rem;
+  margin: .5rem 1rem;
+  background-color: var(--lightGold);
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px 3px black;
+}
+
+.point.active{
+  background-color: var(--gray);
+  box-shadow: none;
+}
+
+.contact{
+  padding: 2rem 1rem;
+  background-color: var(--gray);
+  color: white;
+}
+
+.contact-info{
+  text-align: right;
+  font-size: 10px;
+}
+
+/* Tablet */
+@media only screen and ( min-width: 481px ) {
+
+  .menu li{
+    list-style: none;
+    padding: 3% 0;
+  }
+
+  .menu label img{
+    padding: 4% 0;
+  }
+
+  .carousel{
+    border-radius: 50px;
+    box-shadow: 3px 3px 3px 3px black;
+  }
+
+  .carousel-container img{
+    border-radius: 50px;
+  }
+
+  .contact-info{
+    padding-top: 4rem;
+    text-align: center;
+    font-size: 12px;
+  }
+
+}
+
+
+
+
+
+
+
+/* Desktop */
+@media only screen and ( min-width: 768px ) {
+
+  .home-wrapper{
+    padding-bottom: 3rem;
+  }
+
+  .navbar{
+    padding: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .brand{
+    font-size: x-large;
+  }
+
+  .burger-menu{
+    display: flex;
+  }
+
+  .burger-menu > label{
+    display: none;
+  }
+
+  input#burger-checkbox~ul{
+    position: static;
+    display: flex;
+    background-color: transparent;
+  }
+
+  input#burger-checkbox~ul>li{
+    padding: 0 1rem;
+  }
+
+  .menu > label{
+    display: none;
+  }
+
+  .menu>li a:hover{
+
+    color: var(--lightGold);
+    border-bottom: 5px solid var(--lightGold);
+    font-weight: 400;
+    transition: ease .5s;
+  }
+
+  .main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+  }
+
+  .main>.photo img{
+    width: 80%;
+  }
+
+  .about-wrapper{
+    padding-top: 3rem;
+  }
+
+  .about-me{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  .about-me>div{
+    padding: 0;
+  }
+
+  .about-me>div h1{
+    padding-right: 3rem;
+  }
+
+  .about-me p{
+    text-align: left;
+    padding: 0 2rem;
+    padding-right: 10rem;
+    margin-left: 0%;
+    border-left: 4px solid var(--lightGold);
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .formation{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+  }
+
+  .formation-card{
+    display: block;
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .formation-card>img{
+    width: 200px;
+    border-right: none;
+  }
+
+  .card-info{
+    text-align: center;
+    font-size: large;
+  }
+
+  .abilities-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+    padding-bottom: 0;
+  }
+
+  .my-stack-title{
+    margin: 0 2rem;
+  }
+
+  .stack-wrapper{
+    grid-template-columns: repeat(5,1fr);
+    border-right: 4px solid var(--lightGold);
+    margin-top: 0;
+  }
+
+  .stack-wrapper img{
+    margin: 1rem 2rem;
+  }
+
+  .skills{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .progress-bars{
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+  }
+
+  .portfolio-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .portfolio-title{
+    margin: 0 auto;
+  }
+
+  .portfolio-content{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    border-left: 4px solid var(--lightGold);
+  }
+
+  .carousel{
+    border-radius: 60px;
+    box-shadow: 3px 3px 3px 3px black;
+  }
+
+  .carousel-container img{
+    border-radius: 60px;
+  }
+
+  .contact-info{
+    padding-top: 4rem;
+    text-align: center;
+    font-size: 12px;
+  }
+}
